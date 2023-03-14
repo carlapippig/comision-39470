@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic");
+
+body {
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+input {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="number"] {
+    width: 150px;
+    background-color: white;
+}
+
+form {
+    padding: 20px;
+    background-color: rgb(197, 216, 232);
+    box-shadow: 7px 7px 40px lightgray;
+}
+
+.ocultar {
+    display: none;
+}
+
+.red-text {
+    color: darkred !important;
+}
+
+.blue-text {
+    color: blue !important;
+}
+
+.orange-text {
+    color: darkorange !important;
+}
+
+.bolder-600 {
+    font-weight: 600;
+}

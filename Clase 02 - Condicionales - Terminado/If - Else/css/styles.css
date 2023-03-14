@@ -1,0 +1,67 @@
+body {
+    padding: 10px;
+}
+
+input {
+    background-color: white !important;
+}
+
+label {
+    line-height: 36px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.button-black {
+    border: 2px solid white !important;
+    background-color: black !important;
+}
+
+.button-black:active {
+    color: black;
+    border: 2px solid black !important;
+    background-color: white !important;
+
+}
+
+.button-outline {
+    color: white !important;
+    border: 2px solid white !important;
+}
+
+.button-outline:active {
+    color: black !important;
+    border: 2px solid black !important;
+    background-color: white !important;
+
+}
+
+.button-huella {
+    background-color: white !important;
+    height: 50px !important;
+}
+
+.section-email {
+    padding: 40px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.section-login {
+    padding: 40px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: darkslategray;
+    border-radius: 10px;
+}
+
+.section-login label {
+    color: white !important;
+    font-weight: 300;
+}
