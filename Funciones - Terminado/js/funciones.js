@@ -1,58 +1,56 @@
-// funciones simples - funciones con parámetros - funciones con retorno
-
-// function capitalize() {
-//     let letraInicial = miNombre.substring(0, 1)
-//     let restoPalabra = miNombre.substring(1, miNombre.length)
-//     console.log(letraInicial.toUpperCase() + restoPalabra.toLowerCase())
-// }
-
-// function capitalize(palabra) {
-//     let letraInicial = palabra.substring(0, 1)
-//     let restoPalabra = palabra.substring(1, palabra.length)
-//     console.log(letraInicial.toUpperCase() + restoPalabra.toLowerCase())
-// }
-
-function capitalize(palabra) {
-    if (typeof palabra === 'string') {
-        let letraInicial = palabra.substring(0, 1)
-        let restoPalabra = palabra.substring(1, palabra.length)
-        let normalizado = letraInicial.toUpperCase() + restoPalabra.toLowerCase()
-            return normalizado
-    } else {
-        return '⛔️ Error en el valor pasado como parámetro'
-    }
+function login() {
+    let usuario = prompt("Ingresa tu nombre de usuario:")
+        if (usuario.trim().length > 4) {
+            usuarioLogueado = usuario.trim()
+            alert("✅ Bienvenid@ " + usuarioLogueado)
+        } else {
+            alert("⛔️ Error en el dato ingresado.")
+        }
 }
 
-function saludar(nombre) {
-    alert("Hola, " + capitalize(nombre) + ". Bienvenid@!")
-}
+//login()
 
-function calcularPrecioConIVA(importe) {
-    if (typeof importe === 'number') {
+function calcularIVA(importe) {
+    if (parseFloat(importe)) {
         let resultado = importe * IVA
-            return resultado.toFixed(2)
-    } else {
-        return '⛔️ Se espera un valor numérico como parámetro.'
+        console.log("El importe + IVA es de", resultado)
     }
 }
 
-function calcularImporteFinal() {
-    debugger
-    let numero = parseFloat(prompt("Ingresa el importe del producto:"))
-    if (typeof numero === 'number') {
-        let resultado = calcularPrecioConIVA(numero)
-        alert("El importe $ " + numero + " con IVA, es de $ " + resultado)
+function calcularPrecioFinal() {
+    let precioDelProducto = prompt("Ingresa el importe del producto:")
+        calcularIVA(precioDelProducto)
+}
+//calcularPrecioFinal()
+
+function sumar(numA, numB) {
+    let resultado = numA + numB
+    console.log("Resultado de la suma:", resultado)
+}
+
+function concatenar(texto1, texto2) {
+    if (texto1.trim() !== "" && texto2.trim() !== "") {
+        textoConcatenado = texto1.trim() + texto2.trim()
+        return textoConcatenado
     }
 }
 
-
-
-function saludarme() {
-    let username = "Coderhouse"
-    return username
+function independiente() {
+    let username = "CameronHowe"
+        console.log("La usuario es:", username)
 }
 
-console.log("1 - ", username)
-console.log("2 - ", saludarme())
-console.log("3 - ", username)
+console.log("La variable username vale:", username)
+independiente()
+console.log("Ahora, la variable username vale:", username)
 
+
+const miFuncion = function(a, b) {
+    console.log("Esta es una función anónima")
+    return a + b 
+}
+
+const miArrowFunction = (a, b)=> {
+    console.log("Esta es una función anónima")
+    return a + b 
+}
